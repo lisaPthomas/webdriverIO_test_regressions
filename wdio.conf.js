@@ -49,8 +49,7 @@ exports.config = {
     reporters: ['spec'],
     services: ['selenium-standalone'], 
     bail: 0,
-    baseUrl: 'http://localhost:4567',
-    //baseUrl: 'https://qa-our.independa.com',
+    baseUrl: 'https://our.fakeWebsite.com',
     waitforTimeout: 10000, //sets default for all waitFor methods
     connectionRetryTimeout: 90000, 
     connectionRetryCount: 4,
@@ -74,10 +73,8 @@ exports.config = {
         chai.Should();
 
         //UserNames
-        // global.userName = 'cg@independa.com';
-        // global.password = 'Independa1';
-        global.userName = 'lthomas@independa.com';
-        global.password = 'independa';
+        global.userName = 'User123';
+        global.password = 'password';
         //Unique Strings for Assertions
         global.makeId = (length) => {
             let result = '';
